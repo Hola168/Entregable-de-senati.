@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   CivaCargo | TransAndina
+  </title>
+  <meta content="CivaCargo: transporte interprovincial y carga. Diseño estático basado en los recursos de Stitch." name="description"/>
+  <meta content="CivaCargo | TransAndina" property="og:title"/>
+  <meta content="CivaCargo: transporte interprovincial y carga." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="script-src 'none'; object-src 'none'; base-uri 'self'" http-equiv="Content-Security-Policy"/>
+  <link href="../CSS/menuETL.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-background text-body-md text-on-surface antialiased page-cic">
+  <header class="site-header">
+   <div class="header-inner">
+    <a class="brand" href="index.html">
+     <img alt="TransAndina, transporte interprovincial" src="../Multimedia/a1bad35fd79f.jpg"/>
+     <span>
+      Pasajeros &amp; Cargo
+     </span>
+    </a>
+    <nav aria-label="Navegación principal" class="desktop-nav">
+     <a href="index.html">
+      Inicio
+     </a>
+     <details class="service-menu">
+      <summary>
+       Servicios
+      </summary>
+      <div>
+       <a href="index.html">
+        Inicio
+       </a>
+       <a href="ExC.html">
+        ExcluCiva
+       </a>
+       <a href="SuC.html">
+        SuperCiva
+       </a>
+       <a href="EcC.html">
+        EconoCiva
+       </a>
+       <a aria-current="page" href="CiC.html">
+        CivaCargo
+       </a>
+       <a href="ServiciosC.html">
+        Servicios corporativos
+       </a>
+       <a href="Contactos.html">
+        Contacto
+       </a>
+       <a href="Rastrear envio.html">
+        Rastreo de envíos
+       </a>
+      </div>
+     </details>
+     <a href="ServiciosC.html">
+      Servicios corporativos
+     </a>
+     <a href="Contactos.html">
+      Contacto
+     </a>
+     <a class="action" href="Rastrear envio.html">
+      Rastrea tu envío
+     </a>
+    </nav>
+    <details class="mobile-menu">
+     <summary aria-label="Abrir menú">
+      ☰
+      <span>
+       Menú
+      </span>
+     </summary>
+     <nav aria-label="Navegación móvil">
+      <a href="index.html">
+       Inicio
+      </a>
+      <a href="ExC.html">
+       ExcluCiva
+      </a>
+      <a href="SuC.html">
+       SuperCiva
+      </a>
+      <a href="EcC.html">
+       EconoCiva
+      </a>
+      <a aria-current="page" href="CiC.html">
+       CivaCargo
+      </a>
+      <a href="ServiciosC.html">
+       Servicios corporativos
+      </a>
+      <a href="Contactos.html">
+       Contacto
+      </a>
+      <a href="Rastrear envio.html">
+       Rastreo de envíos
+      </a>
+     </nav>
+    </details>
+   </div>
+  </header>
+  <main class="w-full pt-20 bg-background">
+   <div class="publication-note">
+    Contenido de presentación basado en Stitch. Características y condiciones comerciales pendientes de validación.
+   </div>
+   <div class="flex flex-col w-full">
+    <section class="relative w-full overflow-hidden bg-primary px-gutter py-space-xl text-on-primary">
+     <div class="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none">
+     </div>
+     <div class="absolute -left-16 bottom-0 h-64 w-64 rounded-full bg-surface-variant/10 blur-2xl pointer-events-none">
+     </div>
+     <div class="relative z-10 flex flex-col gap-space-md max-w-md mx-auto">
+      <div class="inline-flex items-center gap-space-xs self-start px-space-md py-1.5 rounded-full bg-secondary-container/20 text-secondary-fixed">
+       <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary-container inline-3">
+        ▱
+       </span>
+       <span class="text-label-sm uppercase">
+        Logística &amp; Carga a Nivel Nacional
+       </span>
+      </div>
+      <h1 class="text-headline-xl-mobile text-on-primary">
+       CivaCargo: Encomiendas y logística nacional
+      </h1>
+      <p class="text-body-md text-on-primary-container leading-relaxed">
+       Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+      </p>
+      <div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+       <div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-highest/10 text-center">
+        <span class="text-title-lg text-secondary-fixed">
+         Por confirmar
+        </span>
+        <span class="text-label-sm text-on-primary-container">
+         Agencias Activas
+        </span>
+       </div>
+       <div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-highest/10 text-center">
+        <span class="text-title-lg text-secondary-fixed">
+         Por confirmar
+        </span>
+        <span class="text-label-sm text-on-primary-container">
+         Tiempos Express
+        </span>
+       </div>
+       <div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-highest/10 text-center">
+        <span class="text-title-lg text-secondary-fixed">
+         Por confirmar
+        </span>
+        <span class="text-label-sm text-on-primary-container">
+         Monitoreo Real
+        </span>
+       </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-space-sm pt-space-sm">
+       <a aria-label="Información de contacto; servicio no conectado" class="inline-flex items-center justify-center gap-space-xs h-12 px-space-lg rounded-xl bg-secondary-container text-on-secondary-container text-label-lg shadow-md hover:bg-secondary hover:text-on-secondary transition-all" href="Contactos.html">
+        Consultar información →
+       </a>
+       <a class="inline-flex items-center justify-center gap-space-xs h-12 px-space-lg rounded-xl bg-surface-container-low text-primary text-label-lg shadow-sm hover:bg-surface-container transition-all" href="Rastrear envio.html">
+        <span>
+         Rastrear mi paquete
+        </span>
+        <span aria-hidden="true" class="material-symbols-outlined text-[18px]">
+         ⌖
+        </span>
+       </a>
+      </div>
+     </div>
+    </section>
+    <section class="w-full px-gutter py-space-xl" id="cotizador">
+     <div class="max-w-md mx-auto">
+      <div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-md flex flex-col gap-space-md">
+       <div class="flex items-center gap-space-xs">
+        <span aria-hidden="true" class="material-symbols-outlined text-secondary-container text-[24px]">
+         ◇
+        </span>
+        <div>
+         <h2 class="text-headline-lg-mobile text-primary">
+          Consulta de envío
+         </h2>
+         <p class="text-body-sm text-on-surface-variant">
+          Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+         </p>
+        </div>
+       </div>
+       <div class="flex flex-col gap-space-md">
+        <div class="flex flex-col gap-1">
+         <label class="text-label-sm uppercase text-on-surface-variant flex items-center gap-1" for="origin-city">
+          <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary">
+           ○
+          </span>
+          Ciudad Origen
+         </label>
+         <div class="relative">
+          <select class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface text-body-md appearance-none focus:outline-none" id="origin-city">
+           <option selected="" value="lima">
+            Lima
+           </option>
+           <option value="arequipa">
+            Arequipa
+           </option>
+           <option value="trujillo">
+            Trujillo
+           </option>
+           <option value="chiclayo">
+            Chiclayo
+           </option>
+           <option value="piura">
+            Piura
+           </option>
+           <option value="cusco">
+            Cusco
+           </option>
+          </select>
+          <span aria-hidden="true" class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">
+           ⌄
+          </span>
+         </div>
+        </div>
+        <div class="flex flex-col gap-1">
+         <label class="text-label-sm uppercase text-on-surface-variant flex items-center gap-1" for="dest-city">
+          <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary-container">
+           ⌖
+          </span>
+          Ciudad Destino
+         </label>
+         <div class="relative">
+          <select class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface text-body-md appearance-none focus:outline-none" id="dest-city">
+           <option selected="" value="trujillo">
+            Trujillo
+           </option>
+           <option value="arequipa">
+            Arequipa
+           </option>
+           <option value="chiclayo">
+            Chiclayo
+           </option>
+           <option value="piura">
+            Piura
+           </option>
+           <option value="cusco">
+            Cusco
+           </option>
+           <option value="lima">
+            Lima
+           </option>
+          </select>
+          <span aria-hidden="true" class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">
+           ⌄
+          </span>
+         </div>
+        </div>
+        <div class="grid grid-cols-2 gap-space-sm">
+         <div class="flex flex-col gap-1">
+          <label class="text-label-sm uppercase text-on-surface-variant" for="package-type">
+           Tipo Envío
+          </label>
+          <div class="relative">
+           <select class="w-full h-12 px-space-sm rounded-lg bg-surface-container-low text-on-surface text-body-md appearance-none focus:outline-none" id="package-type">
+            <option selected="" value="caja">
+             Caja / Bulto
+            </option>
+            <option value="sobre">
+             Sobre / Valija
+            </option>
+            <option value="saco">
+             Saco / Atado
+            </option>
+            <option value="fragil">
+             Carga Delicada
+            </option>
+           </select>
+           <span aria-hidden="true" class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">
+            ⌄
+           </span>
+          </div>
+         </div>
+         <div class="flex flex-col gap-1">
+          <label class="text-label-sm uppercase text-on-surface-variant" for="package-weight">
+           Peso Aprox.
+          </label>
+          <div class="relative">
+           <select class="w-full h-12 px-space-sm rounded-lg bg-surface-container-low text-on-surface text-body-md appearance-none focus:outline-none" id="package-weight">
+            <option value="1">
+             Por confirmar
+            </option>
+            <option selected="" value="2">
+             Por confirmar
+            </option>
+            <option value="3">
+             Por confirmar
+            </option>
+            <option value="4">
+             Por confirmar
+            </option>
+           </select>
+           <span aria-hidden="true" class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">
+            ⌄
+           </span>
+          </div>
+         </div>
+        </div>
+        <button class="action" disabled="" type="button">
+         Cotización no conectada
+        </button>
+       </div>
+       <p class="status-note">
+        No hay sistema de tarifas conectado. No se calcula ni muestra ningún importe.
+       </p>
+      </div>
+     </div>
+    </section>
+    <section class="w-full px-gutter py-space-xl bg-surface-container-low">
+     <div class="max-w-md mx-auto flex flex-col gap-space-lg">
+      <div class="flex flex-col gap-1">
+       <span class="text-label-sm uppercase text-secondary font-bold font-bold">
+        Servicios Especializados
+       </span>
+       <h2 class="text-headline-lg-mobile text-primary">
+        Modalidades de Envío
+       </h2>
+       <p class="text-body-md text-on-surface-variant">
+        Diseñadas para particulares, microempresas y grandes cadenas de distribución.
+       </p>
+      </div>
+      <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+       <div class="flex items-start gap-space-sm">
+        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-surface-container-high text-primary">
+         <span aria-hidden="true" class="material-symbols-outlined text-[24px]">
+          ◇
+         </span>
+        </div>
+        <div class="flex flex-col min-w-0">
+         <div class="flex items-center justify-between">
+          <h3 class="text-title-md text-primary">
+           1. Encomienda Express
+          </h3>
+          <span class="px-2 py-0.5 rounded-full bg-surface-container text-primary text-label-sm">
+           Por confirmar
+          </span>
+         </div>
+         <p class="text-body-sm text-on-surface-variant mt-1">
+          Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+         </p>
+        </div>
+       </div>
+       <div class="flex flex-wrap gap-1 pt-space-xs">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Aviso por SMS
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Retiro en ventanilla
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Tarifa por kilogramo
+        </span>
+       </div>
+      </div>
+      <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+       <div class="flex items-start gap-space-sm">
+        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-secondary-container/15 text-secondary-container">
+         <span aria-hidden="true" class="material-symbols-outlined text-[24px]">
+          ◇
+         </span>
+        </div>
+        <div class="flex flex-col min-w-0">
+         <div class="flex items-center justify-between">
+          <h3 class="text-title-md text-primary">
+           2. Puerta a Puerta
+          </h3>
+          <span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-fixed-variant text-label-sm">
+           Confort
+          </span>
+         </div>
+         <p class="text-body-sm text-on-surface-variant mt-1">
+          Condiciones por confirmar
+         </p>
+        </div>
+       </div>
+       <div class="flex flex-wrap gap-1 pt-space-xs">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Cita programada
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Firma digital
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Lima y principales capitales
+        </span>
+       </div>
+      </div>
+      <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+       <div class="flex items-start gap-space-sm">
+        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-surface-container-high text-primary">
+         <span aria-hidden="true" class="material-symbols-outlined text-[24px]">
+          ◇
+         </span>
+        </div>
+        <div class="flex flex-col min-w-0">
+         <div class="flex items-center justify-between">
+          <h3 class="text-title-md text-primary">
+           3. Carga Comercial &amp; Consolidada
+          </h3>
+          <span class="px-2 py-0.5 rounded-full bg-surface-container text-primary text-label-sm">
+           Mayoristas
+          </span>
+         </div>
+         <p class="text-body-sm text-on-surface-variant mt-1">
+          Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+         </p>
+        </div>
+       </div>
+       <div class="flex flex-wrap gap-1 pt-space-xs">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Condiciones por confirmar
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Guía de remisión electrónica
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Ejecutivo asignado
+        </span>
+       </div>
+      </div>
+      <div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+       <div class="flex items-start gap-space-sm">
+        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-secondary-container/15 text-secondary-container">
+         <span aria-hidden="true" class="material-symbols-outlined text-[24px]">
+          ◇
+         </span>
+        </div>
+        <div class="flex flex-col min-w-0">
+         <div class="flex items-center justify-between">
+          <h3 class="text-title-md text-primary">
+           4. Valija &amp; Documentación
+          </h3>
+          <span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-fixed-variant text-label-sm">
+           Seguridad Alta
+          </span>
+         </div>
+         <p class="text-body-sm text-on-surface-variant mt-1">
+          Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+         </p>
+        </div>
+       </div>
+       <div class="flex flex-wrap gap-1 pt-space-xs">
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Precinto foliado
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Prioridad de cabina
+        </span>
+        <span class="px-2.5 py-1 rounded-full bg-surface-container text-label-sm text-on-surface-variant">
+         Custodia estricta
+        </span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="w-full px-gutter py-space-xl">
+     <div class="max-w-md mx-auto flex flex-col gap-space-md">
+      <div class="flex flex-col gap-1">
+       <span class="text-label-sm uppercase text-secondary font-bold font-bold">
+        Cobertura Estratégica
+       </span>
+       <h2 class="text-headline-lg-mobile text-primary">
+        Red de Agencias y Terminales
+       </h2>
+       <p class="text-body-md text-on-surface-variant">
+        Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+       </p>
+      </div>
+      <div class="flex flex-col gap-space-sm">
+       <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+        <div class="flex items-center justify-between">
+         <span class="text-title-md text-primary">
+          Agencia por confirmar
+         </span>
+         <span class="inline-flex items-center gap-1 text-label-sm text-secondary font-bold font-bold">
+          <span class="w-2 h-2 rounded-full bg-secondary-container">
+          </span>
+          Abierto
+         </span>
+        </div>
+        <p class="text-body-sm text-on-surface-variant">
+         Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+        </p>
+        <div class="flex items-center justify-between pt-space-xs text-on-surface-variant text-body-sm">
+         <span class="flex items-center gap-1">
+          <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-outline">
+           ◷
+          </span>
+          Por confirmar
+         </span>
+         <span class="flex items-center gap-1">
+          <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-outline">
+           ▦
+          </span>
+          Por confirmar
+         </span>
+        </div>
+       </div>
+       <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+        <div class="flex items-center justify-between">
+         <span class="text-title-md text-primary">
+          Arequipa - Terminal Terrestre
+         </span>
+         <span class="inline-flex items-center gap-1 text-label-sm text-secondary font-bold font-bold">
+          <span class="w-2 h-2 rounded-full bg-secondary-container">
+          </span>
+          Abierto
+         </span>
+        </div>
+        <p class="text-body-sm text-on-surface-variant">
+         Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+        </p>
+        <div class="flex items-center justify-between pt-space-xs text-on-surface-variant text-body-sm">
+         <span class="flex items-center gap-1">
+          <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-outline">
+           ◷
+          </span>
+          Por confirmar
+         </span>
+         <span class="text-label-sm text-primary-container font-bold font-bold">
+          Carga Pesada OK
+         </span>
+        </div>
+       </div>
+       <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+        <div class="flex items-center justify-between">
+         <span class="text-title-md text-primary">
+          Agencia por confirmar
+         </span>
+         <span class="inline-flex items-center gap-1 text-label-sm text-secondary font-bold font-bold">
+          <span class="w-2 h-2 rounded-full bg-secondary-container">
+          </span>
+          Abierto
+         </span>
+        </div>
+        <p class="text-body-sm text-on-surface-variant">
+         Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+        </p>
+        <div class="flex items-center justify-between pt-space-xs text-on-surface-variant text-body-sm">
+         <span class="flex items-center gap-1">
+          <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-outline">
+           ◷
+          </span>
+          Por confirmar
+         </span>
+         <span class="text-label-sm text-primary-container font-bold font-bold">
+          Despacho Express
+         </span>
+        </div>
+       </div>
+       <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+        <div class="flex items-center justify-between">
+         <span class="text-title-md text-primary">
+          Agencia por confirmar
+         </span>
+         <span class="inline-flex items-center gap-1 text-label-sm text-secondary font-bold font-bold">
+          <span class="w-2 h-2 rounded-full bg-secondary-container">
+          </span>
+          Abierto
+         </span>
+        </div>
+        <p class="text-body-sm text-on-surface-variant">
+         Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+        </p>
+        <div class="flex items-center justify-between pt-space-xs text-on-surface-variant text-body-sm">
+         <span class="flex items-center gap-1">
+          <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-outline">
+           ◷
+          </span>
+          Por confirmar
+         </span>
+         <span class="text-label-sm text-primary-container font-bold font-bold">
+          Almacén Refrigerado
+         </span>
+        </div>
+       </div>
+      </div>
+      <a class="inline-flex items-center justify-center gap-space-xs h-12 rounded-xl bg-surface-container-high text-primary text-label-md hover:bg-surface-variant transition-colors" href="Contactos.html">
+       <span>
+        Por confirmar
+       </span>
+       <span aria-hidden="true" class="material-symbols-outlined text-[18px]">
+        ◇
+       </span>
+      </a>
+     </div>
+    </section>
+    <section class="w-full px-gutter py-space-xl bg-surface-container-low">
+     <div class="max-w-md mx-auto flex flex-col gap-space-md">
+      <div class="flex flex-col gap-1">
+       <span class="text-label-sm uppercase text-secondary font-bold font-bold">
+        Seguridad y Normativa MTC
+       </span>
+       <h2 class="text-headline-lg-mobile text-primary">
+        Guía de Embalaje &amp; Requisitos
+       </h2>
+       <p class="text-body-md text-on-surface-variant">
+        Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+       </p>
+      </div>
+      <details class="cargo-details">
+       <summary>
+        1. Rotulación correcta y obligatoria
+       </summary>
+       <p class="faq-answer">
+        Los requisitos de embalaje, los artículos admitidos y las condiciones de cobertura están pendientes de confirmación.
+       </p>
+      </details>
+      <details class="cargo-details">
+       <summary>
+        2. Artículos prohibidos y restringidos
+       </summary>
+       <p class="faq-answer">
+        Los requisitos de embalaje, los artículos admitidos y las condiciones de cobertura están pendientes de confirmación.
+       </p>
+      </details>
+      <details class="cargo-details">
+       <summary>
+        3. Declaración de valor &amp; Seguro
+       </summary>
+       <p class="faq-answer">
+        Los requisitos de embalaje, los artículos admitidos y las condiciones de cobertura están pendientes de confirmación.
+       </p>
+      </details>
+     </div>
+    </section>
+    <section class="w-full px-gutter py-space-xl">
+     <div class="max-w-md mx-auto flex flex-col gap-space-md">
+      <div class="flex flex-col gap-1">
+       <span class="text-label-sm uppercase text-secondary font-bold font-bold">
+        Nuestra Operación
+       </span>
+       <h2 class="text-headline-lg-mobile text-primary">
+        Infraestructura y Flota Especializada
+       </h2>
+      </div>
+      <div class="flex flex-col gap-space-sm">
+       <div class="relative overflow-hidden rounded-xl shadow-sm">
+        <img alt="Centro de carga con paquetes y vehículo de reparto" aria-label="Warehouse logistics terminal showing clean modern shelves and cargo personnel loading parcels into an ultramarine blue truck under soft industrial lighting, professional transport operation in Lima Peru." class="w-full h-48 object-cover" loading="lazy" role="img" src="../Multimedia/d2d547835d83.jpg"/>
+        <div class="p-space-md bg-surface-container-lowest flex flex-col gap-1">
+         <span class="text-title-md text-primary">
+          Centros de Clasificación y Tránsito
+         </span>
+         <p class="text-body-sm text-on-surface-variant">
+          Características y condiciones pendientes de confirmación.
+         </p>
+        </div>
+       </div>
+       <div class="relative overflow-hidden rounded-xl shadow-sm">
+        <img alt="Vehículo de carga en una carretera de montaña" aria-label="Modern logistics freight van with copper and navy blue TransAndina livery parked on a sunny Peruvian highway, driver inspecting strapped secure packages, authoritative and reliable transit." class="w-full h-48 object-cover" loading="lazy" role="img" src="../Multimedia/ac2cbbb9e61d.jpg"/>
+        <div class="p-space-md bg-surface-container-lowest flex flex-col gap-1">
+         <span class="text-title-md text-primary">
+          Unidades Exclusivas para Carga Pesada
+         </span>
+         <p class="text-body-sm text-on-surface-variant">
+          Camiones furgón herméticos con amortiguación neumática especial para proteger cargas delicadas en rutas andinas.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="w-full px-gutter py-space-xl bg-primary text-on-primary">
+     <div class="max-w-md mx-auto flex flex-col items-center text-center gap-space-md">
+      <div class="h-16 w-16 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container">
+       <span aria-hidden="true" class="material-symbols-outlined text-[32px]">
+        ▱
+       </span>
+      </div>
+      <h2 class="text-headline-lg-mobile text-on-primary">
+       Organiza tu próximo envío
+      </h2>
+      <p class="text-body-md text-on-primary-container">
+       Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+      </p>
+      <div class="flex flex-col w-full gap-space-sm pt-space-xs">
+       <a aria-label="Información de contacto; servicio no conectado" class="inline-flex items-center justify-center gap-space-xs h-12 w-full rounded-xl bg-secondary-container text-on-secondary-container text-label-lg shadow-md hover:bg-secondary hover:text-on-secondary transition-all" href="Contactos.html">
+        Consultar información →
+       </a>
+       <a class="inline-flex items-center justify-center gap-space-xs h-12 w-full rounded-xl bg-surface-container-high text-primary text-label-lg shadow-sm hover:bg-surface-variant transition-all" href="Rastrear envio.html">
+        <span>
+         Rastrear mi paquete
+        </span>
+        <span aria-hidden="true" class="material-symbols-outlined text-[18px]">
+         ◇
+        </span>
+       </a>
+      </div>
+      <div class="pt-space-md flex items-center justify-center gap-2">
+       <span class="text-body-sm text-on-primary-container">
+        ¿Buscas pasajes interprovinciales?
+       </span>
+       <a class="text-label-sm text-secondary-fixed hover:underline flex items-center gap-0.5" href="index.html">
+        <span>
+         Ir a Pasajes
+        </span>
+        <span aria-hidden="true" class="material-symbols-outlined text-[14px]">
+         →
+        </span>
+       </a>
+      </div>
+     </div>
+    </section>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <img alt="TransAndina, transporte interprovincial" src="../Multimedia/a1bad35fd79f.jpg"/>
+     <p>
+      Pasajeros y carga interprovincial.
+     </p>
+    </div>
+    <nav aria-label="Enlaces del pie de página">
+     <a href="index.html">
+      Inicio
+     </a>
+     <a href="ExC.html">
+      ExcluCiva
+     </a>
+     <a href="SuC.html">
+      SuperCiva
+     </a>
+     <a href="EcC.html">
+      EconoCiva
+     </a>
+     <a aria-current="page" href="CiC.html">
+      CivaCargo
+     </a>
+     <a href="ServiciosC.html">
+      Servicios corporativos
+     </a>
+     <a href="Contactos.html">
+      Contacto
+     </a>
+     <a href="Rastrear envio.html">
+      Rastreo de envíos
+     </a>
+    </nav>
+    <div>
+     <h2>
+      Información de atención
+     </h2>
+     <p>
+      Los canales oficiales, agencias y horarios están pendientes de confirmación.
+     </p>
+     <a href="Contactos.html">
+      Contacto →
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

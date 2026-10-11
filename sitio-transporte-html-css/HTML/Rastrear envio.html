@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Rastreo de envíos | TransAndina
+  </title>
+  <meta content="Rastreo de envíos: transporte interprovincial y carga. Diseño estático basado en los recursos de Stitch." name="description"/>
+  <meta content="Rastreo de envíos | TransAndina" property="og:title"/>
+  <meta content="Rastreo de envíos: transporte interprovincial y carga." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="script-src 'none'; object-src 'none'; base-uri 'self'" http-equiv="Content-Security-Policy"/>
+  <link href="../CSS/menuETL.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-background text-body-md text-on-surface antialiased page-rastrear-envio">
+  <header class="site-header">
+   <div class="header-inner">
+    <a class="brand" href="index.html">
+     <img alt="TransAndina, transporte interprovincial" src="../Multimedia/a1bad35fd79f.jpg"/>
+     <span>
+      Pasajeros &amp; Cargo
+     </span>
+    </a>
+    <nav aria-label="Navegación principal" class="desktop-nav">
+     <a href="index.html">
+      Inicio
+     </a>
+     <details class="service-menu">
+      <summary>
+       Servicios
+      </summary>
+      <div>
+       <a href="index.html">
+        Inicio
+       </a>
+       <a href="ExC.html">
+        ExcluCiva
+       </a>
+       <a href="SuC.html">
+        SuperCiva
+       </a>
+       <a href="EcC.html">
+        EconoCiva
+       </a>
+       <a href="CiC.html">
+        CivaCargo
+       </a>
+       <a href="ServiciosC.html">
+        Servicios corporativos
+       </a>
+       <a href="Contactos.html">
+        Contacto
+       </a>
+       <a aria-current="page" href="Rastrear envio.html">
+        Rastreo de envíos
+       </a>
+      </div>
+     </details>
+     <a href="ServiciosC.html">
+      Servicios corporativos
+     </a>
+     <a href="Contactos.html">
+      Contacto
+     </a>
+     <a class="action" href="Rastrear envio.html">
+      Rastrea tu envío
+     </a>
+    </nav>
+    <details class="mobile-menu">
+     <summary aria-label="Abrir menú">
+      ☰
+      <span>
+       Menú
+      </span>
+     </summary>
+     <nav aria-label="Navegación móvil">
+      <a href="index.html">
+       Inicio
+      </a>
+      <a href="ExC.html">
+       ExcluCiva
+      </a>
+      <a href="SuC.html">
+       SuperCiva
+      </a>
+      <a href="EcC.html">
+       EconoCiva
+      </a>
+      <a href="CiC.html">
+       CivaCargo
+      </a>
+      <a href="ServiciosC.html">
+       Servicios corporativos
+      </a>
+      <a href="Contactos.html">
+       Contacto
+      </a>
+      <a aria-current="page" href="Rastrear envio.html">
+       Rastreo de envíos
+      </a>
+     </nav>
+    </details>
+   </div>
+  </header>
+  <main class="w-full pt-20 bg-background">
+   <div class="publication-note">
+    Contenido de presentación basado en Stitch. Características y condiciones comerciales pendientes de validación.
+   </div>
+   <div class="flex flex-col w-full">
+    <div class="relative w-full overflow-hidden bg-primary text-on-primary px-margin py-space-xl">
+     <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none">
+     </div>
+     <div class="absolute -left-12 bottom-0 w-48 h-48 rounded-full bg-surface-container-high/5 blur-2xl pointer-events-none">
+     </div>
+     <div class="relative z-10 flex flex-col gap-space-md max-w-lg mx-auto">
+      <div class="inline-flex items-center gap-space-xs self-start px-space-md py-1 rounded-full bg-secondary-container/20 text-secondary-fixed">
+       <span aria-hidden="true" class="material-symbols-outlined text-[16px] text-secondary-container inline-4">
+        ◇
+       </span>
+       <span class="text-label-sm">
+        Información del servicio
+       </span>
+      </div>
+      <div class="flex flex-col gap-space-xs">
+       <h1 class="text-headline-xl-mobile text-on-primary">
+        Rastreo de envíos
+       </h1>
+       <p class="text-body-md text-on-primary-container">
+        Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+       </p>
+      </div>
+      <form class="flex flex-col gap-space-md bg-surface-container-lowest text-on-surface p-space-lg rounded-xl shadow-xl mt-space-sm">
+       <div class="flex items-center p-1 bg-surface-container-low rounded-lg">
+        <input checked="" class="peer/guia native-radio" id="mode-guia" name="tracking_type" type="radio" value="guia"/>
+        <label class="flex-1 py-2 text-center rounded-md text-label-md cursor-pointer transition-all text-on-surface-variant peer-checked/guia:bg-primary peer-checked/guia:text-on-primary peer-checked/guia:shadow-sm" for="mode-guia">
+         N° Guía / Boleta
+        </label>
+        <input class="peer/codigo native-radio" id="mode-codigo" name="tracking_type" type="radio" value="web"/>
+        <label class="flex-1 py-2 text-center rounded-md text-label-md cursor-pointer transition-all text-on-surface-variant peer-checked/codigo:bg-primary peer-checked/codigo:text-on-primary peer-checked/codigo:shadow-sm" for="mode-codigo">
+         Código Envío Web
+        </label>
+       </div>
+       <div class="flex flex-col gap-space-xs">
+        <label class="text-label-sm text-on-surface-variant flex items-center justify-between" for="guia_input">
+         <span>
+          Identificador de Carga
+         </span>
+         <span class="text-secondary font-bold font-bold">
+          Identificador
+         </span>
+        </label>
+        <div class="relative flex items-center">
+         <span aria-hidden="true" class="material-symbols-outlined absolute left-space-md text-outline text-[20px]">
+          ▥
+         </span>
+         <input class="w-full pl-11 pr-space-md py-3.5 bg-surface-container-low text-on-surface text-label-lg rounded-lg focus:outline-none focus:bg-surface-container-lowest placeholder:text-outline/70 transition-all shadow-inner" id="guia_input" name="codigo" placeholder="Introduce tus datos" required="" type="text"/>
+        </div>
+        <span class="text-body-sm text-outline">
+         Encuéntralo en la esquina superior derecha de tu guía física o en el correo de confirmación.
+        </span>
+       </div>
+       <button class="w-full flex items-center justify-center gap-space-sm py-3.5 px-space-lg rounded-full bg-secondary-container text-on-secondary-container text-label-lg shadow-md hover:bg-secondary hover:text-on-secondary transition-all" disabled="" type="button">
+        Consulta no conectada
+       </button>
+       <p class="status-note">
+        Interfaz sin conexión a reservas, cotización o seguimiento. No se envían datos.
+       </p>
+      </form>
+     </div>
+    </div>
+    <section class="w-full max-w-lg mx-auto px-margin py-space-xl flex flex-col gap-space-lg" id="resultado-rastreo">
+     <p class="status-note">
+      Consulta no conectada. Esta página no muestra estados ni resultados de envíos.
+     </p>
+     <div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md">
+      <div class="flex items-center gap-space-xs text-primary">
+       <span aria-hidden="true" class="material-symbols-outlined text-secondary inline-5">
+        ◇
+       </span>
+       <h3 class="text-headline-lg-mobile">
+        Requisitos de Seguridad
+       </h3>
+      </div>
+      <p class="text-body-sm text-on-surface-variant">
+       Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+      </p>
+      <div class="flex flex-col gap-space-sm">
+       <div class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg">
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">
+         ◇
+        </span>
+        <div class="flex flex-col">
+         <span class="text-label-md text-primary">
+          Documentación de identidad
+         </span>
+         <span class="text-body-sm text-on-surface-variant">
+          Características y condiciones pendientes de confirmación.
+         </span>
+        </div>
+       </div>
+       <div class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg">
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">
+         ◇
+        </span>
+        <div class="flex flex-col">
+         <span class="text-label-md text-primary">
+          Validación de entrega
+         </span>
+         <span class="text-body-sm text-on-surface-variant">
+          Condiciones por confirmar
+         </span>
+        </div>
+       </div>
+       <div class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg">
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">
+         ◇
+        </span>
+        <div class="flex flex-col">
+         <span class="text-label-md text-primary">
+          Retiro por terceros
+         </span>
+         <span class="text-body-sm text-on-surface-variant">
+          Características y condiciones pendientes de confirmación.
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+      <div class="flex items-center gap-space-xs text-primary">
+       <span aria-hidden="true" class="material-symbols-outlined text-secondary-container">
+        ◉
+       </span>
+       <h3 class="text-title-lg">
+        Soporte Operativo CivaCargo
+       </h3>
+      </div>
+      <p class="text-body-sm text-on-surface-variant">
+       ¿Tienes dudas con un paquete en ruta, demoras climáticas o necesitas coordinar un reparto especial?
+      </p>
+      <div class="grid grid-cols-1 gap-space-sm">
+       <a class="flex items-center justify-between p-space-md bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors" href="Contactos.html">
+        <div class="flex items-center gap-space-sm">
+         <span aria-hidden="true" class="material-symbols-outlined text-primary">
+          ◇
+         </span>
+         <div class="flex flex-col">
+          <span class="text-label-md text-primary">
+           Atención de carga
+          </span>
+          <span class="text-body-sm text-outline">
+           Por confirmar
+          </span>
+         </div>
+        </div>
+        <span aria-hidden="true" class="material-symbols-outlined text-outline text-[18px]">
+         ›
+        </span>
+       </a>
+       <a class="flex items-center justify-between p-space-md bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors" href="Contactos.html">
+        Consultar información →
+       </a>
+       <a class="flex items-center justify-between p-space-md bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors" href="Contactos.html">
+        <div class="flex items-center gap-space-sm">
+         <span aria-hidden="true" class="material-symbols-outlined text-primary">
+          ◇
+         </span>
+         <div class="flex flex-col">
+          <span class="text-label-md text-primary">
+           Reportar Retraso o Incidencia
+          </span>
+          <span class="text-body-sm text-outline">
+           Canal por confirmar
+          </span>
+         </div>
+        </div>
+        <span aria-hidden="true" class="material-symbols-outlined text-outline text-[18px]">
+         ›
+        </span>
+       </a>
+      </div>
+     </div>
+     <div class="bg-primary text-on-primary rounded-xl p-space-lg flex flex-col gap-space-md text-center items-center shadow-lg">
+      <div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+       <span aria-hidden="true" class="material-symbols-outlined text-[24px]">
+        ▱
+       </span>
+      </div>
+      <div class="flex flex-col gap-space-xs">
+       <h3 class="text-headline-lg-mobile text-on-primary">
+        ¿Deseas enviar un nuevo paquete?
+       </h3>
+       <p class="text-body-sm text-on-primary-container">
+        Consulta la disponibilidad, las características y las condiciones del servicio antes de organizar tu viaje o envío.
+       </p>
+      </div>
+      <a aria-label="Información de contacto; servicio no conectado" class="w-full py-3.5 px-space-lg rounded-full bg-secondary-container text-on-secondary-container text-label-lg hover:bg-secondary hover:text-on-secondary transition-all shadow-md" href="Contactos.html">
+       Consultar información →
+      </a>
+     </div>
+    </section>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-inner">
+    <div>
+     <img alt="TransAndina, transporte interprovincial" src="../Multimedia/a1bad35fd79f.jpg"/>
+     <p>
+      Pasajeros y carga interprovincial.
+     </p>
+    </div>
+    <nav aria-label="Enlaces del pie de página">
+     <a href="index.html">
+      Inicio
+     </a>
+     <a href="ExC.html">
+      ExcluCiva
+     </a>
+     <a href="SuC.html">
+      SuperCiva
+     </a>
+     <a href="EcC.html">
+      EconoCiva
+     </a>
+     <a href="CiC.html">
+      CivaCargo
+     </a>
+     <a href="ServiciosC.html">
+      Servicios corporativos
+     </a>
+     <a href="Contactos.html">
+      Contacto
+     </a>
+     <a aria-current="page" href="Rastrear envio.html">
+      Rastreo de envíos
+     </a>
+    </nav>
+    <div>
+     <h2>
+      Información de atención
+     </h2>
+     <p>
+      Los canales oficiales, agencias y horarios están pendientes de confirmación.
+     </p>
+     <a href="Contactos.html">
+      Contacto →
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
