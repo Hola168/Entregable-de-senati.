@@ -1,2 +1,2 @@
 # Entregable-de-senati.
-hechopor el alumno Ricardo Guzman del segundo semestre
+hecho por el alumno Ricardo Guzman del segundo semestre
